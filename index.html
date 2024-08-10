@@ -40,33 +40,27 @@
         .button:hover {
             background-color: #6a0dad; /* Darker purple */
         }
-        .tutorial {
-            padding: 50px;
-            background-color: #222; /* Dark grey background for tutorial section */
-        }
-        .tutorial h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
+        #keyDisplay {
+            margin-top: 20px;
+            font-size: 1.5em;
             color: #d0aaff; /* Light purple */
         }
-        .tutorial iframe {
-            width: 80%;
-            height: 450px;
-            border: none;
-        }
     </style>
+    <script>
+        function displayKey() {
+            const key = "XHOY7JGIFXDIZJFGPHUR";
+            document.getElementById("keyDisplay").textContent = "Your key: " + key;
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <h1>Dark Executor</h1>
         <p>The ultimate Roblox executor for your gaming needs.</p>
-        <a href="DarkExecutor.exe" class="button" download>Download DarkExecutor </a>
+        <a href="DarkExecutor.exe" class="button" download>Download DarkExecutor</a>
         <a href="API.exe" class="button" download>Download API (required)</a>
-    </div>
-
-    <div class="tutorial">
-        <h2>Tutorial</h2>
-        <iframe src="https://www.youtube.com/watch?v=fQRZFkLU4Tg" allowfullscreen></iframe>
+        <a href="#" class="button" onclick="displayKey()">Get Key</a>
+        <div id="keyDisplay"></div>
     </div>
 </body>
 </html>
